@@ -1,0 +1,80 @@
+* {
+    color: rgb(0, 163, 68);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding-top: 120px; /* Adjust padding to account for the new header height */
+}
+
+.game{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+#gamesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center games horizontally */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid green;
+    gap: 16px; /* Space between games */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+    height: auto; /* Adjust height dynamically */
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700; /* Highlight color on hover */
+}
+
+header.shrink {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+section {
+    scroll-margin-top: 130px; /* Adjust this value to match the header's height */
+}
+
+#summary {
+    padding-top: 10px; /* Adjust this value as needed */
+}
+
